@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+![screencapture-localhost-8564-2023-05-23-19_47_18](https://github.com/MG-Musty/alx-react/assets/106968663/0d88076d-c209-4116-987f-85922e76d18a)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
