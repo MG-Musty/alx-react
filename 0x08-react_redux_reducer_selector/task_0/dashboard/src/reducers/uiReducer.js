@@ -1,4 +1,4 @@
-import { LOGOUT DISPLAY_NOTIFICATION_DRAWER, LOGIN_SUCCESS, LOGIN_FAILURE, HIDE_NOTIFICATION_DRAWER } from '../actions/uiActionTypes';
+import { LOGOUT, DISPLAY_NOTIFICATION_DRAWER, LOGIN_SUCCESS, LOGIN_FAILURE, HIDE_NOTIFICATION_DRAWER } from '../actions/uiActionTypes';
 // Create the basic state
 // In a file named reducers/uiReducer.js, define the initial state of the reducer for the UI:
 // It should have one boolean property isNotificationDrawerVisible
@@ -14,8 +14,8 @@ import { LOGOUT DISPLAY_NOTIFICATION_DRAWER, LOGIN_SUCCESS, LOGIN_FAILURE, HIDE_
 
 export const initialState = () => {
     isNotificationDrawerVisible: false,
-    isUserLoggedIn: false,
-    user: {}
+    isUserLoggedIn; false,
+    user {}
 }
 
 export default function uiReducer(state = initialState, action) {
@@ -37,12 +37,12 @@ export default function uiReducer(state = initialState, action) {
             }
         case LOGIN_FAILURE:
             return {
-                ..state,
+                ...state,
                 isUserLoggedIn: false
             }
         case LOGOUT:
             return {
-                ..state,
+                ...state,
                 isUserLoggedIn: false
             }
         default:
